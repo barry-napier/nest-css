@@ -1,0 +1,18 @@
+{
+  "name": "nest-css",
+  "version": "0.0.1",
+  "description": "Nest CSS is a CSS framework for building modern, responsive web applications.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barry-napier/nest-css.git"
+  },
+  "keywords": [],
+  "author": "Barry Napier",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/barry-napier/nest-css/issues"
+  },
+  "homepage": "https://github.com/barry-napier/nest-css#readme"
+}
