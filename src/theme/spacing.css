@@ -1,0 +1,11 @@
+/*
+* file: src/theme/spacing.css
+* description: Spacing utilities for the theme.
+This spacing variable is used as a multiplier for padding, margin, and other spacing-related styles.
+* It provides a consistent spacing scale across the theme.
+*/
+
+@theme {
+  --spacing: 0.25rem;
+  /* Add more if needed */
+}

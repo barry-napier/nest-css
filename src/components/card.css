@@ -1,0 +1,11 @@
+/*
+* file: src/components/card.css
+* description: Card component styles.
+* This file defines the styles for card components, including layout, padding, and shadow effects.
+*/
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-white p-8 shadow-sm;
+  }
+}

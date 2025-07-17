@@ -1,0 +1,12 @@
+/*
+* file: src/utilities/text.css
+* description: Text utilities for the theme.
+* This file defines text-related utilities such as color, size, and alignment.
+* It includes classes for muted text, which can be applied to elements to achieve a subdued appearance
+*/
+
+@layer utilities {
+  .muted {
+    @apply text-gray-600;
+  }
+}
