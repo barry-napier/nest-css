@@ -2,7 +2,11 @@
   "name": "nest-css",
   "version": "0.0.1",
   "description": "Nest CSS is a CSS framework for building modern, responsive web applications.",
-  "scripts": {},
+  "scripts": {
+    "build": "postcss src/styles.css -o dist/styles.css",
+    "watch": "postcss src/styles.css -o dist/styles.css --watch",
+    "lint": "stylelint 'src/**/*.css'"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/barry-napier/nest-css.git"
@@ -14,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/barry-napier/nest-css/issues"
   },
-  "homepage": "https://github.com/barry-napier/nest-css#readme"
+  "homepage": "https://github.com/barry-napier/nest-css#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.1"
+  }
 }
