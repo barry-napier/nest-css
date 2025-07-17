@@ -1,15 +1,11 @@
 /*
-* file: src/components/card.css
-* description: Card component styles.
-* This file defines the styles for card components, including layout, padding, and shadow effects.
+* file: src/components/layout/header.css
+* description: Styles for the header component
 */
 
 @layer components {
-  .btn {
-    @apply inline-block rounded-md px-4 py-2 text-sm font-normal;
-  }
-
-  .btn--primary {
-    @apply cursor-pointer bg-light-blue-700 px-4 py-2 text-white hover:bg-light-blue-800 active:bg-light-blue-900;
+  .app-header {
+    @apply flex items-center justify-between bg-white p-4 text-gray-800 shadow-md;
+    box-shadow: 0 1px 5px 0 #6297ca21;
   }
 }

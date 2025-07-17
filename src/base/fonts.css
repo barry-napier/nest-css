@@ -1,26 +1,27 @@
 @layer base {
   /* Proxima Nova Font Family */
   @font-face {
-    font-family: proxima-nova;
-    src: url('https://www.aflac.com/_global-assets/fonts/proximanova/proxima_nova_reg-webfont.woff') format('woff');
+    font-family: 'proxima-nova';
+    font-style: normal;
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+    src: url(../../public/assets/fonts/proxima-nova/proximanova-regular-webfont.woff) format('woff');
   }
-
   @font-face {
-    font-family: proxima-nova;
-    src: url('https://www.aflac.com/_global-assets/fonts/proximanova/proxima_nova_sbold-webfont.woff') format('woff');
+    font-family: 'proxima-nova';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../../public/assets/fonts/proxima-nova/proximanova-medium-webfont.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'proxima-nova';
+    font-style: normal;
     font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+    src: url(../../public/assets/fonts/proxima-nova/proximanova-semibold-webfont.woff) format('woff');
   }
-
   @font-face {
-    font-family: proxima-nova;
-    src: url('https://www.aflac.com/_global-assets/fonts/proximanova/proxima_nova_bold-webfont.woff') format('woff');
-    font-weight: 700;
+    font-family: 'proxima-nova';
     font-style: normal;
-    font-display: swap;
+    font-weight: 700;
+    src: url(../../public/assets/fonts/proxima-nova/proximanova-bold-webfont.woff) format('woff');
   }
 }

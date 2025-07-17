@@ -4,10 +4,6 @@
   }
 
   body {
-    @apply h-screen bg-gray-100 text-gray-800;
-  }
-
-  main {
-    @apply h-screen;
+    @apply flex h-screen flex-col bg-gray-100 text-gray-800;
   }
 }

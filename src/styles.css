@@ -13,10 +13,26 @@
 @import './base/fonts.css';
 @import './base/global.css';
 
-/* Components */
-@import './components/button.css';
-@import './components/card.css';
-@import './components/heading.css';
+/* Form Components */
+@import './components/form/button.css';
+@import './components/form/checkbox.css';
+@import './components/form/fieldset.css';
+@import './components/form/input.css';
+@import './components/form/label.css';
+@import './components/form/radio.css';
+@import './components/form/select.css';
+@import './components/form/textarea.css';
+
+/* Layout Components */
+@import './components/layout/card.css';
+@import './components/layout/footer.css';
+@import './components/layout/header.css';
+@import './components/layout/hr.css';
+@import './components/layout/lists.css';
+@import './components/layout/tables.css';
+
+/* Text Components */
+@import './components/text/heading.css';
 
 /* Utilities */
 @import './utilities/text.css';

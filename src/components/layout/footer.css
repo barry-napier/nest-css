@@ -1,15 +1,14 @@
 /*
-* file: src/components/card.css
-* description: Card component styles.
-* This file defines the styles for card components, including layout, padding, and shadow effects.
+* file: src/components/layout/footer.css
+* description: Styles for the footer component.
 */
 
 @layer components {
-  .btn {
-    @apply inline-block rounded-md px-4 py-2 text-sm font-normal;
+  .app-footer {
+    @apply bg-gray-200 p-4 text-center text-white;
   }
 
-  .btn--primary {
-    @apply cursor-pointer bg-light-blue-700 px-4 py-2 text-white hover:bg-light-blue-800 active:bg-light-blue-900;
+  .app-footer p {
+    @apply text-sm;
   }
 }
