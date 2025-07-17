@@ -4,8 +4,9 @@
   "description": "Nest CSS is a CSS framework for building modern, responsive web applications.",
   "scripts": {
     "build": "postcss src/styles.css -o dist/styles.css",
-    "watch": "postcss src/styles.css -o dist/styles.css --watch",
-    "lint": "stylelint 'src/**/*.css'"
+    "dev": "concurrently 'npm run watch' 'npm run serve'",
+    "serve": "live-server --port=3000 --watch=dist --no-browser --entry-file=./public/index.html",
+    "watch": "postcss src/styles.css -o dist/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
+    "live-server": "^1.2.2",
     "postcss-cli": "^11.0.1",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14"

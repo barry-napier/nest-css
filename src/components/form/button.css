@@ -1,0 +1,27 @@
+/*
+* file: src/components/card.css
+* description: Card component styles.
+* This file defines the styles for card components, including layout, padding, and shadow effects.
+*/
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-md px-4 py-2 text-sm font-normal;
+  }
+
+  .btn--primary {
+    @apply bg-light-blue-700 hover:bg-light-blue-800 active:bg-light-blue-900 cursor-pointer px-4 py-2 text-white;
+  }
+
+  .btn--secondary {
+    @apply cursor-pointer bg-gray-300 px-4 py-2 text-gray-800 hover:bg-gray-400 active:bg-gray-500;
+  }
+
+  .btn--tertiary {
+    @apply cursor-pointer bg-white px-4 py-2 text-gray-600 hover:bg-gray-100 active:bg-gray-200;
+  }
+
+  .btn--destructive {
+    @apply cursor-pointer bg-red-600 px-4 py-2 text-white hover:bg-red-700 active:bg-red-800;
+  }
+}

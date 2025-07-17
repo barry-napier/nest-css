@@ -14,8 +14,9 @@
 @import './base/global.css';
 
 /* Components */
-@import './components/card.css';
 @import './components/button.css';
+@import './components/card.css';
+@import './components/heading.css';
 
 /* Utilities */
 @import './utilities/text.css';
