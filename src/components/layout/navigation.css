@@ -57,9 +57,10 @@
   *   - Must be inside .nav-list
   *   - Can contain icon and text
   *   - Supports current, hover, and focus states
+  *   - More square proportions for better visual balance
   */
   .nav-item {
-    @apply flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 focus:bg-light-blue-50 focus:text-light-blue-700 focus:ring-2 focus:ring-light-blue-500 focus:outline-none;
+    @apply flex items-center gap-2 rounded-lg px-2 py-3 text-sm font-medium text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 focus:bg-light-blue-50 focus:text-light-blue-700 focus:ring-2 focus:ring-light-blue-500 focus:outline-none;
   }
 
   .nav-item--current {
@@ -76,10 +77,10 @@
   * WHEN TO USE: When navigation item has an icon
   * RULES:
   *   - Must be first child of .nav-item
-  *   - Size: 20x20px
+  *   - Uses icon sprite system with .icon-20 class
   */
   .nav-item__icon {
-    @apply h-4 w-4 flex-shrink-0;
+    @apply inline-block h-5 w-5 flex-shrink-0 fill-current;
   }
 
   /*
@@ -92,6 +93,7 @@
   */
   .nav-item__text {
     @apply hidden text-xs md:block;
+    font-size: 0.625rem;
   }
 
   /*
@@ -136,7 +138,7 @@
   *   - Smaller text size
   */
   .nav-submenu-item {
-    @apply flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 focus:bg-light-blue-50 focus:text-light-blue-700 focus:ring-2 focus:ring-light-blue-500 focus:outline-none;
+    @apply flex items-center gap-3 rounded-lg px-2 py-2 text-sm font-medium text-gray-600 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 focus:bg-light-blue-50 focus:text-light-blue-700 focus:ring-2 focus:ring-light-blue-500 focus:outline-none;
   }
 
   .nav-submenu-item--current {
@@ -152,7 +154,7 @@
   *   - Separated from main navigation
   */
   .nav-utility {
-    @apply border-t border-gray-200 p-2;
+    @apply border-t border-gray-200;
   }
 
   /*
@@ -176,7 +178,7 @@
     }
 
     .nav-item {
-      @apply flex-col gap-1 px-2 py-3 text-xs;
+      @apply flex-col gap-1 px-1 py-2 text-xs;
     }
 
     .nav-item__text {

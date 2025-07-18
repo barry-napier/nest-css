@@ -1,0 +1,46 @@
+/*
+* file: src/utilities/icons.css
+* description: Icon utility classes for sprite-based icon system.
+* This file defines the base icon styles and size variants using Tailwind utilities.
+*/
+
+@layer utilities {
+  /*
+  * .icon
+  * PURPOSE: Base icon class for sprite-based icons
+  * WHEN TO USE: Always use with icon sprites
+  * RULES:
+  *   - Must be used with <svg> element
+  *   - Requires <use> element with href to symbol
+  *   - Inherits color from parent (currentColor)
+  */
+  .icon {
+    @apply inline-block h-4 w-4 fill-current;
+  }
+
+  /*
+  * Icon size variants
+  * PURPOSE: Different icon sizes for various contexts
+  * WHEN TO USE: Based on design requirements
+  * RULES:
+  *   - Use .icon-16 for small contexts (12px text)
+  *   - Use .icon-20 for medium contexts (14px text)
+  *   - Use .icon-24 for large contexts (16px+ text)
+  *   - Use .icon-32 for extra large contexts (headers, CTAs)
+  */
+  .icon-16 {
+    @apply h-4 w-4;
+  }
+
+  .icon-20 {
+    @apply h-5 w-5;
+  }
+
+  .icon-24 {
+    @apply h-6 w-6;
+  }
+
+  .icon-32 {
+    @apply h-8 w-8;
+  }
+}

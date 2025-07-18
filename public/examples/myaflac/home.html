@@ -7,20 +7,49 @@
     <link rel="stylesheet" href="../../css/nest.css" />
   </head>
   <body>
+    <!-- Icon Sprite (hidden) -->
+    <svg class="hidden">
+      <symbol id="icon-home" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+        />
+      </symbol>
+      <symbol id="icon-accounts" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+        />
+      </symbol>
+      <symbol id="icon-performance" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+        />
+      </symbol>
+      <symbol id="icon-feedback" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="icon-warning" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+    </svg>
+
     <div class="app-container">
       <!-- Global Navigation Sidebar -->
-      <aside class="app-sidebar max-w-28">
+      <aside class="app-sidebar md:max-w-24">
         <nav class="nav">
           <!-- Main Navigation List -->
           <ul class="nav-list">
             <!-- Home - Current Page -->
             <li>
               <a href="/examples/myaflac/home.html" class="nav-item nav-item--current flex flex-col items-center">
-                <svg class="nav-item__icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                  />
-                </svg>
+                <svg class="nav-item__icon"><use href="#icon-home"></use></svg>
                 <span class="nav-item__text">Home</span>
               </a>
             </li>
@@ -28,11 +57,7 @@
             <!-- Accounts -->
             <li>
               <a href="#" class="nav-item flex flex-col items-center">
-                <svg class="nav-item__icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
-                  />
-                </svg>
+                <svg class="nav-item__icon"><use href="#icon-accounts"></use></svg>
                 <span class="nav-item__text">Accounts</span>
               </a>
             </li>
@@ -40,11 +65,7 @@
             <!-- Performance -->
             <li>
               <a href="#" class="nav-item flex flex-col items-center">
-                <svg class="nav-item__icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
-                  />
-                </svg>
+                <svg class="nav-item__icon"><use href="#icon-performance"></use></svg>
                 <span class="nav-item__text">Performance</span>
               </a>
             </li>
@@ -55,25 +76,13 @@
             <ul class="nav-list">
               <li>
                 <a href="#" class="nav-item flex flex-col items-center">
-                  <svg class="nav-item__icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <svg class="nav-item__icon"><use href="#icon-feedback"></use></svg>
                   <span class="nav-item__text text-center">Give feedback</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="nav-item flex flex-col items-center">
-                  <svg class="nav-item__icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <svg class="nav-item__icon"><use href="#icon-warning"></use></svg>
                   <span class="nav-item__text text-center">Report Issue</span>
                 </a>
               </li>
@@ -106,7 +115,18 @@
         <!-- footer -->
         <footer class="app-footer">
           <div>
-            <p>© 2025 Aflac. All rights reserved.</p>
+            <a href="#" class="link">Annual Privacy Notice</a>
+            <a href="#" class="link">Accessibility Statement</a>
+            <p class="mb-8">
+              If you've been impacted by a recent disaster, <a href="#" class="link inline">Read this.</a>
+            </p>
+            <span class="font-semibold tracking-tight">© 2025 Aflac. All rights reserved.</span>
+          </div>
+          <div class="flex flex-col justify-between">
+            <details>
+              <summary class="text-right">View Legal</summary>
+            </details>
+            <div>Web.Release-605.20250715.5</div>
           </div>
         </footer>
       </div>

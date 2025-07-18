@@ -119,6 +119,6 @@
   *   - Mobile: Visible above bottom navigation
   */
   .app-footer {
-    @apply flex items-center justify-center bg-white px-6 py-4 text-sm text-gray-600;
+    @apply flex justify-between bg-gray-200 p-8 text-xs text-gray-600;
   }
 }
