@@ -47,7 +47,7 @@
   *   - Should contain navigation elements only
   */
   .app-sidebar {
-    @apply order-last h-16 w-full bg-white shadow-lg md:order-first md:h-auto md:w-20 md:shadow-md;
+    @apply z-10 order-last w-full bg-white shadow-lg md:order-first md:h-auto md:shadow-md;
   }
 
   /*
