@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Nest CSS is a CSS framework for building modern, responsive web applications.",
   "scripts": {
-    "build": "postcss src/styles.css -o dist/styles.css",
+    "build": "postcss src/styles.css -o public/css/nest.css",
     "dev": "concurrently 'npm run watch' 'npm run serve'",
-    "serve": "live-server --port=3000 --watch=dist --no-browser --entry-file=./public/index.html",
-    "watch": "postcss src/styles.css -o dist/styles.css --watch"
+    "serve": "live-server public --port=3000 --watch=dist --no-browser",
+    "watch": "postcss src/styles.css -o public/css/nest.css --watch"
   },
   "repository": {
     "type": "git",

@@ -1,27 +1,35 @@
 /*
-* file: src/components/card.css
-* description: Card component styles.
-* This file defines the styles for card components, including layout, padding, and shadow effects.
+* file: src/components/form/button.css
+* description: Button component styles.
+* This file defines the styles for button components, including layout, padding, and color variants.
 */
 
 @layer components {
   .btn {
-    @apply inline-block rounded-md px-4 py-2 text-sm font-normal;
+    @apply flex cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 text-base font-semibold transition-colors;
   }
 
   .btn--primary {
-    @apply bg-light-blue-700 hover:bg-light-blue-800 active:bg-light-blue-900 cursor-pointer px-4 py-2 text-white;
+    @apply bg-light-blue-700 text-white hover:bg-light-blue-800 active:bg-light-blue-900;
   }
 
   .btn--secondary {
-    @apply cursor-pointer bg-gray-300 px-4 py-2 text-gray-800 hover:bg-gray-400 active:bg-gray-500;
+    @apply border border-light-blue-700 bg-white text-light-blue-700 hover:bg-gray-50 active:bg-gray-100;
   }
 
   .btn--tertiary {
-    @apply cursor-pointer bg-white px-4 py-2 text-gray-600 hover:bg-gray-100 active:bg-gray-200;
+    @apply bg-gray-100 text-light-blue-700 hover:bg-gray-200 active:bg-gray-300;
   }
 
   .btn--destructive {
-    @apply cursor-pointer bg-red-600 px-4 py-2 text-white hover:bg-red-700 active:bg-red-800;
+    @apply bg-red-600 text-white hover:bg-red-700 active:bg-red-800;
+  }
+
+  .btn--small {
+    @apply px-3.5 py-2 text-sm;
+  }
+
+  .btn--large {
+    @apply px-5 py-2 text-lg;
   }
 }

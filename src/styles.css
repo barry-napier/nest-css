@@ -33,6 +33,7 @@
 
 /* Text Components */
 @import './components/text/heading.css';
+@import './components/text/paragraph.css';
 
 /* Utilities */
 @import './utilities/text.css';
