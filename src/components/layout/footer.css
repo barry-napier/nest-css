@@ -4,11 +4,11 @@
 */
 
 @layer components {
-  .app-footer {
+  .footer {
     @apply bg-gray-200 p-4 text-center text-white;
   }
 
-  .app-footer p {
+  .footer p {
     @apply text-sm;
   }
 }

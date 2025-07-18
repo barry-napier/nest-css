@@ -1,0 +1,124 @@
+/*
+* file: src/components/layout/app-layout.css
+* description: Application layout component styles.
+* This file defines the styles for application layout components including container, sidebar, header, main content, and footer.
+*
+* USAGE RULES:
+* - These classes are for application-level layouts (not individual components)
+* - Always use .app-container as the root wrapper for full-page layouts
+* - Use .app-sidebar only when you need a persistent global navigation sidebar
+* - .app-content must always wrap header, main, and footer sections
+* - These classes should not be mixed with generic layout classes (.header, .footer, etc.)
+*/
+
+@layer components {
+  /*
+  * .app-container
+  * PURPOSE: Root container for full-page application layouts
+  * WHEN TO USE: 
+  *   - Main application pages (dashboard, settings, etc.)
+  *   - Pages that need full viewport height
+  *   - Pages with consistent header/footer structure
+  * RULES:
+  *   - Must be the outermost wrapper (after <body>)
+  *   - Only one per page
+  *   - Always contains .app-content
+  *   - Can optionally contain .app-sidebar
+  *   - Responsive: flex-col on mobile, flex-row on desktop
+  */
+  .app-container {
+    @apply flex min-h-screen flex-col md:flex-row;
+  }
+
+  /*
+  * .app-sidebar
+  * PURPOSE: Persistent global navigation sidebar for application layouts
+  * WHEN TO USE:
+  *   - Applications with complex navigation (dashboard, admin panels)
+  *   - When you need persistent navigation that doesn't scroll
+  *   - Multi-level navigation structures
+  * RULES:
+  *   - Must be a direct child of .app-container
+  *   - Mobile: Full width at bottom (order-last)
+  *   - Desktop: Fixed width on left (order-first)
+  *   - Only one per page
+  *   - Mobile: h-16 (64px height)
+  *   - Desktop: w-20 (80px width)
+  *   - Should contain navigation elements only
+  */
+  .app-sidebar {
+    @apply order-last h-16 w-full bg-white shadow-lg md:order-first md:h-auto md:w-20 md:shadow-md;
+  }
+
+  /*
+  * .app-content
+  * PURPOSE: Main content wrapper that contains header, main, and footer
+  * WHEN TO USE:
+  *   - Always used with .app-container
+  *   - When you need a structured layout with header/footer
+  * RULES:
+  *   - Must be a direct child of .app-container
+  *   - Must contain .app-header, .app-main, and .app-footer in that order
+  *   - Only one per page
+  *   - Mobile: Takes full width and height minus bottom nav
+  *   - Desktop: Takes remaining width after sidebar (flex-1)
+  */
+  .app-content {
+    @apply flex flex-1 flex-col;
+  }
+
+  /*
+  * .app-header
+  * PURPOSE: Application header with branding and primary navigation
+  * WHEN TO USE:
+  *   - Pages that need consistent branding
+  *   - When you have global navigation elements
+  *   - Applications with user authentication
+  * RULES:
+  *   - Must be the first child of .app-content
+  *   - Should contain logo and primary navigation only
+  *   - Height is fixed (py-4 = 32px total)
+  *   - Always has white background and subtle shadow
+  *   - Use flex layout for logo and navigation alignment
+  */
+  .app-header {
+    @apply flex items-center justify-between bg-white px-6 py-4 shadow-sm;
+  }
+
+  /*
+  * .app-main
+  * PURPOSE: Main content area for page-specific content
+  * WHEN TO USE:
+  *   - Always used with .app-container layout
+  *   - For the primary content of each page
+  * RULES:
+  *   - Must be between .app-header and .app-footer
+  *   - Takes remaining height (flex-1)
+  *   - Has consistent padding (p-6 = 24px)
+  *   - Light gray background to distinguish from header/footer
+  *   - Should contain page-specific content only
+  *   - Mobile: Bottom padding to account for footer + bottom nav
+  */
+  .app-main {
+    @apply flex-1 bg-gray-50 p-6 pb-32 md:pb-6;
+  }
+
+  /*
+  * .app-footer
+  * PURPOSE: Application footer with copyright and secondary links
+  * WHEN TO USE:
+  *   - Pages that need consistent footer branding
+  *   - When you have legal links or secondary navigation
+  * RULES:
+  *   - Must be the last child of .app-content
+  *   - Should contain copyright and secondary links only
+  *   - Height is fixed (py-4 = 32px total)
+  *   - Always has white background
+  *   - Centered content layout
+  *   - Smaller text size for secondary information
+  *   - Mobile: Visible above bottom navigation
+  */
+  .app-footer {
+    @apply flex items-center justify-center bg-white px-6 py-4 text-sm text-gray-600;
+  }
+}

@@ -7,47 +7,72 @@
     <link rel="stylesheet" href="../css/nest.css" />
   </head>
   <body>
-    <header class="app-header">
-      <div>
-        <a href="/">
-          <img loading="eager" width="80" height="28" src="../assets/images/bc_aflac_logo.png" alt="Aflac Logo" />
-        </a>
-      </div>
-      <div>
-        <a href="https://github.com/barry-napier/nest-css" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 20 20" class="size-5 hover:opacity-30" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0020 10c0-5.525-4.475-10-10-10z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </header>
+    <div class="app-container">
+      <div class="app-content">
+        <header class="app-header">
+          <div>
+            <a href="/">
+              <img loading="eager" width="80" height="28" src="../assets/images/bc_aflac_logo.png" alt="Aflac Logo" />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/barry-napier/nest-css" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 20 20" class="size-5 hover:opacity-30" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0020 10c0-5.525-4.475-10-10-10z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </header>
 
-    <main class="flex flex-1 flex-col gap-4 p-4">
-      <section>
-        <h1 class="heading--1">Examples</h1>
-        <p class="paragraph">Here are a number of examples of how to use the nest css framework</p>
-      </section>
-      <section>
-        <h2 class="heading--2">MyAflac</h2>
-        <ul>
-          <li>
-            <a href="/examples/myaflac/home.html" class="link">Home Page</a>
-          </li>
-          <li>
-            <a href="/examples/myaflac/session-timeout.html">Session Timeout</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Profile</h2>
-        <ul>
-          <li>
-            <a href="/examples/profile/personal-information.html">Personal Information</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+        <main class="app-main">
+          <section>
+            <h1 class="heading--1">Examples</h1>
+            <p class="paragraph">Here are a number of examples of how to use the nest css framework</p>
+          </section>
+          <section>
+            <h2 class="heading--2">MyAflac</h2>
+            <ul>
+              <li>
+                <a href="/examples/myaflac/home.html" class="link">
+                  <span>Home Page</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    class="rotate-180"
+                  >
+                    <path
+                      d="M7.24003 10.3201L2.88003 6.00006L7.17003 1.71006C7.26376 1.6171 7.33815 1.5065 7.38892 1.38464C7.43969 1.26278 7.46583 1.13207 7.46583 1.00006C7.46583 0.868048 7.43969 0.737343 7.38892 0.615483C7.33815 0.493624 7.26376 0.383023 7.17003 0.29006C6.98267 0.103809 6.72922 -0.000732422 6.46503 -0.000732422C6.20085 -0.000732422 5.94739 0.103809 5.76003 0.29006L0.760031 5.29006C0.57378 5.47742 0.469238 5.73087 0.469238 5.99506C0.469238 6.25925 0.57378 6.5127 0.760031 6.70006L5.83003 11.7701C6.01629 11.9548 6.26769 12.059 6.53003 12.0601C6.66164 12.0608 6.7921 12.0356 6.91394 11.9858C7.03577 11.9361 7.14659 11.8627 7.24003 11.7701C7.33837 11.6766 7.41667 11.5642 7.47018 11.4396C7.52369 11.3149 7.55128 11.1807 7.55128 11.0451C7.55128 10.9094 7.52369 10.7752 7.47018 10.6506C7.41667 10.5259 7.33837 10.4135 7.24003 10.3201Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/examples/myaflac/session-timeout.html" class="link">Session Timeout</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="heading--2">Profile</h2>
+            <ul>
+              <li>
+                <a href="/examples/profile/personal-information.html" class="link">Personal Information</a>
+              </li>
+            </ul>
+          </section>
+        </main>
+
+        <footer class="app-footer">
+          <div>
+            <p>© 2025 Aflac. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

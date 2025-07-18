@@ -30,10 +30,12 @@
 @import './components/layout/hr.css';
 @import './components/layout/lists.css';
 @import './components/layout/tables.css';
+@import './components/layout/app-layout.css';
 
 /* Text Components */
 @import './components/text/heading.css';
 @import './components/text/paragraph.css';
+@import './components/text/link.css';
 
 /* Utilities */
 @import './utilities/text.css';

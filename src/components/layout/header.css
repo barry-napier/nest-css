@@ -4,7 +4,7 @@
 */
 
 @layer components {
-  .app-header {
+  .header {
     @apply flex items-center justify-between bg-white p-4 text-gray-800 shadow-md;
     box-shadow: 0 1px 5px 0 #6297ca21;
   }
